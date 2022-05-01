@@ -1,0 +1,89 @@
+#clickToFlip {
+    /*InnerGrid*/
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: clamp(100px, 25vmin, 39vh ) ;
+    grid-template-rows: clamp(100px, 25vmin, 39vh ) ;
+    width: clamp(100px, 25vmin, 39vh ) ;
+    height: clamp(100px, 25vmin, 39vh ) ;
+    border-radius: 50%;
+    left: 0px;
+    right: calc(50vw - calc(clamp(100px, 25vmin, 39vh )/2));  
+    margin-top: calc(0px - calc(clamp(100px, 25vmin, 39vh )/2));
+    margin-left: 0px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-me {
+  grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    width: clamp(100px, 25vmin, 39vh ) ;
+    height: clamp(100px, 25vmin, 39vh ) ;
+    margin: 0px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .flip-me .image-front,
+  .flip-me .image-back {
+    display: grid;
+    grid-template-columns: clamp(100px, 25vmin, 39vh ) ;
+    grid-template-rows: clamp(100px, 25vmin, 39vh ) ;
+    position: absolute;
+    width: clamp(100px, 25vmin, 39vh ) ;
+    height: clamp(100px, 25vmin, 39vh ) ;
+    backface-visibility: hidden;
+    border-radius: 50%;
+  }
+  .flip-me .image-front {
+    animation: rotate360 3s linear 0s infinite;
+  }
+  @keyframes rotate360 {
+	0% {
+		transform: rotateZ(360deg);
+	}
+}
+
+  .flip-me .image-back {
+    transform: rotateX(180deg);
+  }
+  label:hover .flip-me {
+    transform: rotateX(2deg);
+  }
+  input {
+   display: none;
+  }
+  :checked + .flip-me {
+    transform: rotateX(180deg);
+  }
+  label:hover :checked + .flip-me {
+    transform: rotateX(175deg);
+  }
+  
+
+  .image-front img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: clamp(100px, 25vmin, 39vh ) ;
+    height: clamp(100px, 25vmin, 39vh ) ;
+    border-radius: 50%;
+  }
+  .image-back img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: clamp(100px, 25vmin, 39vh ) ;
+    height: clamp(100px, 25vmin, 39vh ) ;
+    border-radius: 50%;
+  }
+
+  .vinyl-face {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    min-width: 95vmin ;
+    min-height: 95vmin ;
+    border-radius: 50%;
+  }

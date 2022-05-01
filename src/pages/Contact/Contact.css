@@ -1,0 +1,56 @@
+#toContact {
+  margin-top: calc(3vh + (clamp(25px, 8vmin, 70px) * 1.5) + (clamp(13px, 4vmin, 25px) * 3) + (10px * 4));
+  right: 30px;
+  left: 20px;
+  z-index: 6;
+  height: fit-content;
+  /*InnerGrid*/
+  grid-column: 13 / 14;
+  grid-row: 1 /2;
+  font-size: clamp(13px, 4vmin, 25px);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.514);
+}
+#contactAnchorRight {
+  /*SectionGrid*/
+  grid-column: 4 /5;
+  grid-row: 1 /2;
+}
+
+#backContact {
+  margin-top: calc(3vh + (clamp(25px, 8vmin, 70px) * 1.5) + (clamp(13px, 4vmin, 25px) * 3) + (10px * 4));
+  margin-left: 5vw;
+  padding-left: 20px;
+  left: 20px;
+  z-index: 9;
+  height: fit-content;
+  /*InnerGrid*/
+  grid-column: 13 / 14;
+  grid-row: 1 /2;
+  font-size: clamp(13px, 4vmin, 25px);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.514);
+}
+#contactAnchorLeft {
+  /*InnerGrid*/
+  grid-column: 13 / 14;
+  grid-row: 1 /2;
+  scroll-snap-align: start;
+}
+
+#contactSection {
+  /*InnerGrid*/
+  grid-column: 13 / 14;
+  grid-row: 1 /2;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 5% 45% 45% 5%;
+  z-index: 4;
+  width: 100vw;
+}
+
+.bgShape5 {
+  /*SectionGrid*/
+  grid-column: 1 / 5;
+  grid-row: 1 / 5;
+  z-index: -1;
+  background-color: rgb(24, 41, 35);
+  margin: 3px 0px 3px 0px;
+}

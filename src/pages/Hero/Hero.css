@@ -1,0 +1,110 @@
+#backHero {
+  margin-top: 3vh;
+  left: 20px;
+  z-index: 10;
+  height: fit-content;
+  /*InnerGrid*/
+  grid-column: 1 /2;
+  grid-row: 1 /2;
+  font-size: clamp(25px, 8vmin, 70px);
+}
+
+#heroAnchor {
+  /*InnerGrid*/
+  grid-column: 1 /2;
+  grid-row: 1 /2;
+}
+
+#heroSection {
+  /*InnerGrid*/
+  grid-column: 1 /2;
+  grid-row: 1 /2;
+  grid-template-columns: 5% 10% 35% 50%;
+  grid-template-rows: 5% 22.5% 22.5% 50%;
+  z-index: 0;
+  background-position: right;
+}
+
+.myPicture {
+  /*InnerGrid*/
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  margin: 30vh 50vw 30vh -20vh;
+  left: -20vh;
+  right: calc(50vw - 20vh);
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../public/img/Me.jpg);
+}
+
+.header-hero {
+  /*InnerGrid*/
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  z-index: 2;
+  justify-self: center;
+  align-self: center;
+  right: 50vw;
+  transform: translate(50%);
+  margin-top: 0px;
+  margin-bottom: calc((clamp(100px, 25vmin, 39vh )/2) - 25px);
+  color: white;
+  font-size: clamp(25px, 8vmin, 100px);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.514);
+}
+.header2-hero {
+  /*InnerGrid*/
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  z-index: 3;
+  justify-self: center;
+  align-self: center;
+  right: 50vw;
+  transform: translate(50%);
+  margin-top: calc((clamp(100px, 25vmin, 39vh )/2) - (clamp(0px, 10vmin, 100px )));
+  margin-bottom: 0px;
+  color: white;
+  font-size: clamp(11px, 3vmin, 35px);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.514);
+}
+
+.snippet-hero {
+  /*InnerGrid*/
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  z-index: 3;
+  justify-self: center;
+  align-self: center;
+  right: calc(50vw - (clamp(100px, 25vw, 39vh )/2));
+  width: clamp(100px, 25vw, 39vh );
+  margin-right: -50%;
+  text-align: center;
+  color: white;
+  font-size: clamp(13px, 3vmin, 50px);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.514);
+}
+
+#backHero:hover > .flicker-slow{
+  animation: flicker 3s linear infinite;
+  text-shadow: 1px 0px 4px rgb(31, 139, 151), 2px 0px 4px rgb(31, 139, 151), 3px 0px 4px rgb(31, 139, 151), 2px 0px 3px rgb(12, 231, 255), 2px 3px 15px rgb(12, 231, 255), 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px rgb(12, 231, 255),40px 0vw 200px rgb(12, 231, 255);
+}
+
+#backHero:hover > .flicker-fast{
+  animation: flicker 1s linear infinite;
+  text-shadow: 1px 0px 4px rgb(182, 73, 31), 2px 0px 4px rgb(182, 73, 31), 3px 0px 4px rgb(182, 73, 31), 2px 0px 3px rgb(231, 140, 104), 2px 3px 15px rgb(231, 140, 104), 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px rgb(231, 140, 104),40px 0vw 200px rgb(231, 140, 104);
+
+}
+
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+}

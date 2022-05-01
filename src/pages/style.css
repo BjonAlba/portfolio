@@ -1,0 +1,180 @@
+.gridBox {
+    width: 100vw;
+    height: 95vh;
+    margin: 2.5vh 0;
+    display: grid;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navLink {
+    width: min-content;
+    position: relative;
+    text-decoration: none;
+    font-size: clamp(15px, 5vw, 20px);
+    color: white;
+}
+.navLink:hover {
+    color: white !important;
+}
+
+.stick-to-left {
+    position: sticky;   
+    left: 0;
+}
+.stick-to-right {
+    position: sticky;   
+    right: 0;
+}
+
+.font-CyberX {
+    font-family: 'CyberX-font', sans-serif;
+}
+.font-TempestaSeven{
+    font-family: 'PF Tempesta Seven', sans-serif;
+}
+.font-RubikGlitch {
+    font-family: 'Rubik Glitch', sans-serif;
+}
+
+.font-FredokaOne {
+font-family: 'Fredoka One', sans-serif;
+}
+
+.font-GrapeNuts {
+font-family: 'Grape Nuts', sans-serif;
+}
+
+.font-PatrickHand {
+font-family: 'Patrick Hand', sans-serif;
+}
+
+.font-Monoton {
+font-family: 'Monoton', sans-serif;
+}
+
+.color-teal {
+color: rgb(39, 182, 197);
+}
+.color-orange {
+color: rgb(233, 109, 59);
+}
+
+.center {
+    justify-self: center;
+    align-self: center;
+}
+
+.superscript-a-subscript::before {
+    content: '<a>';
+    display: none;
+    position: absolute;
+    float: left;
+    top: -7px;
+    font-family: 'PF Tempesta Seven', sans-serif;
+    line-height: 10px;
+    font-size: 8px;
+    color: white;
+}
+.superscript-a-subscript:hover::before {
+    display: flex;
+    width: fit-content;
+    background-color: rgb(0, 0, 0, 0.75);
+}
+.superscript-a-subscript::after {
+    content: '</a>';
+    display: none;
+    position: absolute; 
+    bottom: -6px; 
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'PF Tempesta Seven', sans-serif;
+    line-height: 10px;
+    font-size: 8px;   
+    color: white;
+}
+.superscript-a-subscript:hover::after {
+    display: block;
+    width: fit-content;
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+.superscript-img-subscript::before {
+    content: '<img>';
+    display: none;
+    position: absolute;
+    float: left;
+    top: -7px;
+    font-family: 'PF Tempesta Seven', sans-serif;
+    line-height: 10px;
+    font-size: 8px;
+    color: white;
+}
+.superscript-img-subscript:hover::before {
+    display: flex;
+    width: fit-content;
+    background-color: rgb(0, 0, 0, 0.75);
+}
+.superscript-img-subscript::after {
+    content: '</img>';
+    display: none;
+    position: absolute; 
+    bottom: -6px; 
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'PF Tempesta Seven', sans-serif;
+    line-height: 10px;
+    font-size: 8px;   
+    color: white;
+}
+.superscript-img-subscript:hover::after {
+    display: block;
+    width: fit-content;
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+.hover-box:hover {
+    outline: 1px solid white;
+    background-color: rgb(0, 0, 0, 0.50);
+}
+
+.outline-box {
+    box-shadow: 0 3px 0 white inset,
+            0 -3px 0 white inset;
+}
+
+.superscript-section-subscript::before {
+    content: '<section>';
+    display: block;
+    position: absolute;
+    float: left;
+    top: -10px;
+    z-index: 100;
+    width: fit-content;
+    height: fit-content;
+
+    background-color: rgb(0, 0, 0, 0.75);
+    font-family: 'PF Tempesta Seven', sans-serif;
+    line-height: 10px;
+    font-size: 8px;
+    color: white;
+}
+.superscript-section-subscript::after {
+    content: '</section>';
+    display: block;
+    position: absolute;
+    float: right;
+    bottom: -10px; 
+    z-index: 100;
+    justify-self: flex-end;
+    width: fit-content;
+    height: fit-content;
+  
+    background-color: rgb(0, 0, 0, 0.75);
+    font-family: 'PF Tempesta Seven', sans-serif;
+    line-height: 10px;
+    font-size: 8px;   
+    color: white;
+}
