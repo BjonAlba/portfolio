@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.75eb073d.css",
-    "main.js": "/portfolio/static/js/main.710e53ea.js",
+    "main.css": "/portfolio/static/css/main.6bf7c4c1.css",
+    "main.js": "/portfolio/static/js/main.c989cfef.js",
     "static/js/787.a2cb61a6.chunk.js": "/portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/v882-kul-46.jpg": "/portfolio/static/media/v882-kul-46.19107e1d8f3f42beceeb.jpg",
     "static/media/Alba, Bjon Ernelle - CV.pdf": "/portfolio/static/media/Alba, Bjon Ernelle - CV.9736195359fdccf6f07a.pdf",
@@ -25,12 +25,12 @@
     "static/media/linkedin-in-brands.svg": "/portfolio/static/media/linkedin-in-brands.35d7cb01584842580623e4e827edfe6d.svg",
     "static/media/facebook-f-brands.svg": "/portfolio/static/media/facebook-f-brands.8adca75361b744d17bbeb17b9c804d9d.svg",
     "static/media/circle-solid.svg": "/portfolio/static/media/circle-solid.5995426966211ed210bcb7b29c5344c8.svg",
-    "main.75eb073d.css.map": "/portfolio/static/css/main.75eb073d.css.map",
-    "main.710e53ea.js.map": "/portfolio/static/js/main.710e53ea.js.map",
+    "main.6bf7c4c1.css.map": "/portfolio/static/css/main.6bf7c4c1.css.map",
+    "main.c989cfef.js.map": "/portfolio/static/js/main.c989cfef.js.map",
     "787.a2cb61a6.chunk.js.map": "/portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75eb073d.css",
-    "static/js/main.710e53ea.js"
+    "static/css/main.6bf7c4c1.css",
+    "static/js/main.c989cfef.js"
   ]
 }
